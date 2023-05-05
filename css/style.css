@@ -2,12 +2,35 @@ body {
   font-family: "Raleway", sans-serif;
   color: #1b161d;
   background-color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .body-bg {
   background-image: url(../images/body-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2a0e69;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1c0947;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7a5cff;
 }
 
 .layout_padding {
@@ -173,18 +196,6 @@ a:focus {
   box-shadow: none;
 }
 
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 18px;
-  background-repeat: no-repeat;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-  margin: 0 40px 0 15px;
-  background-position: center;
-}
-
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -307,7 +318,7 @@ a:focus {
 
 .slider_section .carousel-control-prev:hover,
 .slider_section .carousel-control-next:hover {
-  background-color: #292727;
+  background-color: #1c0947;
   background-size: 12px;
 }
 
@@ -482,7 +493,7 @@ a:focus {
 
 .who_section .who_deail-box a {
   display: inline-block;
-  background-color: #fddd33;
+  background-color: #00bfffbc;
   color: #fff;
   font-size: 15px;
   border-radius: 10px;
@@ -619,8 +630,11 @@ a:focus {
   height: 45px;
 }
 
+
 .contact_section .message_input {
   height: 150px;
+  word-wrap: break-word;
+  resize: none;
 }
 
 .contact_form-container {
@@ -644,7 +658,7 @@ a:focus {
 
 .contact_form-container button {
   border: none;
-  background-color: #fddd33;
+  background-color: #00bfffbc;
   color: #fff;
   padding: 12px 65px;
   font-size: 16px;
